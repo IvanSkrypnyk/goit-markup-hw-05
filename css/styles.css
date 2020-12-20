@@ -343,6 +343,35 @@ img {
   margin-right: 30px;
 }
 
+.activities-list-item {
+  position: relative;
+}
+
+.activities-text {
+  margin-top: 27px;
+  margin-bottom: 27px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.activities-text-container {
+  display: inline-flex;
+  justify-content: center;
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
 /*=================ACTIVITIES END======================*/
 
 /*=================TEAM======================*/
@@ -689,6 +718,8 @@ img {
 
 .projecs-list-item-link {
   display: block;
+  overflow: hidden;
+  position: relative;
 }
 
 .projects-list {
@@ -779,6 +810,38 @@ img {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projecs-list-item-link:hover .overlay {
+  transform: translatey(0);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-bottom: 110px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+}
+
+.overlay > p {
+  margin-right: 24px;
+  margin-top: 63px;
+  margin-left: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.556;
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
 }
 
 /*=================PORTFOLIO END======================*/
